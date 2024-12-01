@@ -22,15 +22,46 @@
  * SOFTWARE.
  */
 
-#pragma once
+#ifndef UNION_FIND_H
+#define UNION_FIND_H
+
 #include <vector>
 
+/**
+ * @brief Represents a Union-Find (Disjoint Set Union) data structure.
+ * 
+ * This structure is used to efficiently perform union and find operations,
+ * often utilized in graph algorithms like Kruskal's Minimum Spanning Tree.
+ */
 class UnionFind {
-    std::vector<int> parent;
-    std::vector<int> rank;
+private:
+    std::vector<int> parent; ///< Parent vector for tracking connected components.
+    std::vector<int> rank;   ///< Rank vector for optimization (by rank heuristic).
 
 public:
-    explicit UnionFind(int n);                 
-    int find(int x);                  
-    bool unionSets(int x, int y);     
+    /**
+     * @brief Constructs a Union-Find data structure with `n` elements.
+     * 
+     * @param n The number of elements in the Union-Find structure.
+     */
+    explicit UnionFind(int n);
+
+    /**
+     * @brief Finds the representative of the set containing the element `x`.
+     * 
+     * @param x The element to find.
+     * @return The representative of the set containing `x`.
+     */
+    int find(int x);
+
+    /**
+     * @brief Unites the sets containing elements `x` and `y`.
+     * 
+     * @param x An element in the first set.
+     * @param y An element in the second set.
+     * @return `true` if the sets were united, `false` if they were already connected.
+     */
+    bool union_sets(int x, int y);
 };
+
+#endif // UNION_FIND_H

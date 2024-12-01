@@ -23,6 +23,19 @@
  */
 
 #pragma once
+
 #include <vector>
 
+/**
+ * @brief Solves the Traveling Salesman Problem (TSP) for a given cost matrix.
+ * 
+ * @param n The number of nodes (or cities) in the graph.
+ * @param cost A 2D vector representing the cost of traveling between nodes. 
+ *        cost[i][j] contains the cost to travel from node i to node j.
+ * 
+ * @details
+ * - The function calculates the shortest possible route that visits each node exactly once
+ *   and returns to the starting node.
+ * - It uses an optimization approach suitable for the TSP, such as dynamic programming or brute force.
+ */
 void traveling_salesman(int n, const std::vector<std::vector<int>>& cost);

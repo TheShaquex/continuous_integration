@@ -28,6 +28,19 @@
 #include <vector>
 #include "edge.h"
 
+/**
+ * @brief Implements Kruskal's algorithm to find the Minimum Spanning Tree (MST) of a graph.
+ * 
+ * @param n The number of nodes in the graph.
+ * @param graph A 2D vector representing the adjacency matrix of the graph. 
+ *        graph[i][j] contains the weight of the edge between nodes i and j.
+ *        A value of 0 indicates no edge between the nodes.
+ * 
+ * @details
+ * - The function constructs the MST by sorting edges in non-decreasing order of their weights
+ *   and using a union-find structure to avoid cycles.
+ * - The result is printed directly, showing the edges in the MST.
+ */
 void kruskal(int n, const std::vector<std::vector<int>>& graph);
 
 #endif // KRUSKAL_H

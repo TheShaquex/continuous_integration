@@ -24,4 +24,18 @@
 
 #pragma once
 
+/**
+ * @brief Computes the maximum flow in a flow network using the Ford-Fulkerson algorithm.
+ * 
+ * @param graph A 2D array representing the capacity of edges in the flow network.
+ * @param s The source node in the flow network.
+ * @param t The sink node in the flow network.
+ * @param n The number of nodes in the flow network.
+ * @return The maximum flow from source to sink.
+ * 
+ * @details
+ * - The algorithm works by finding augmenting paths in the residual graph and 
+ *   augmenting the flow until no more augmenting paths exist.
+ * - The input graph is modified during the execution.
+ */
 int fordFulkerson(int graph[100][100], int s, int t, int n);

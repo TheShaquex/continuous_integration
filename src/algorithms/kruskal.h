@@ -26,11 +26,35 @@
 #include <vector>
 #include "../utils/union_find.h"
 
+
+/**
+ * @brief Represents an edge in a graph with a source, destination, and weight.
+ */
 struct Edge {
-    int u;
-    int v;
-    int weight;
-    Edge(int u, int v, int weight);
+    int u;       ///< The source node of the edge.
+    int v;       ///< The destination node of the edge.
+    int weight;  ///< The weight or cost associated with the edge.
+
+    /**
+     * @brief Constructs an Edge with given source, destination, and weight.
+     * @param u The source node of the edge.
+     * @param v The destination node of the edge.
+     * @param weight The weight or cost associated with the edge.
+     */
+    Edge(int u, int v, int weight) : u(u), v(v), weight(weight) {}
 };
 
+/**
+ * @brief Implements Kruskal's algorithm to find the Minimum Spanning Tree (MST) of a graph.
+ * 
+ * @param n The number of nodes in the graph.
+ * @param graph A 2D vector representing the adjacency matrix of the graph. 
+ *        graph[i][j] contains the weight of the edge between nodes i and j.
+ *        A value of 0 indicates no edge between the nodes.
+ * 
+ * @details
+ * - The function constructs the MST by sorting edges in non-decreasing order of their weights
+ *   and using a union-find structure to avoid cycles.
+ * - The result is printed directly, showing the edges in the MST.
+ */
 void kruskal(int n, const std::vector<std::vector<int>>& graph);
