@@ -1,5 +1,6 @@
-# Crear una biblioteca estática
-add_library(my_project_lib STATIC funciones.cc)
+# src/CMakeLists.txt
 
-# Incluir el directorio actual para los encabezados
-target_include_directories(my_project_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+add_subdirectory(algorithms)
+add_subdirectory(graph)
+add_subdirectory(tsp)
+add_subdirectory(utils)

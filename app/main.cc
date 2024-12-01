@@ -1,51 +1,52 @@
-// Copyright (c) 2024, Isaac Alejandro Enriquez Trejo y Kaled Noe Enriquez Trejo
-// Todos los derechos reservados.
-//
-// Licenciado bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
-#include "funciones.h"
 #include <iostream>
 #include <vector>
-
-using namespace std;
+#include <string>
+#include "../src/include/algorithms.h"
+#include "../src/utils/point.h"
 
 int main() {
-    string transmission1 = leer_archivo("transmission1.txt");
-    string transmission2 = leer_archivo("transmission2.txt");
-    string mcode1 = leer_archivo("mcode1.txt");
-    string mcode2 = leer_archivo("mcode2.txt");
-    string mcode3 = leer_archivo("mcode3.txt");
+    int n;
+    std::cin >> n;
 
-    vector<string> mcode = {mcode1, mcode2, mcode3};
-    vector<string> transmissions = {transmission1, transmission2};
-
-    cout << "Parte 1:" << endl;
-
-    for (int i = 0; i < 2; ++i) {
-        for (int j = 0; j < 3; ++j) {
-            int posicionInicio;
-            bool encontrado = buscar_patron(transmissions[i], mcode[j], posicionInicio);
-            if (encontrado) {
-                cout << "true " << posicionInicio + 1 << endl;
-            } else {
-                cout << "false" << endl;
-            }
+    std::vector<std::vector<int>> kruskal_matrix(n, std::vector<int>(n));
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            std::cin >> kruskal_matrix[i][j];
         }
     }
 
-    cout << "Parte 2:" << endl;
-
-    for (const auto &transmission : transmissions) {
-        string palindromo;
-        pair<int, int> resultado = manacher(transmission, palindromo);
-        cout << resultado.first << " " << resultado.second << " " << palindromo << endl;
+    std::vector<std::vector<int>> capacity_matrix(n, std::vector<int>(n));
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            std::cin >> capacity_matrix[i][j];
+        }
     }
 
-    cout << "Parte 3:" << endl;
+    std::vector<Point> points;
+    std::string input;
+    for (int i = 0; i < n; ++i) {
+        std::cin >> input;
+        points.push_back(Point::parse_point(input));
+    }
 
-    int inicio, fin;
-    string substring;
-    sub_comun_largo(transmission1, transmission2, inicio, fin, substring);
-    cout << inicio + 1 << " " << fin + 1 << " " << substring << endl;
+    std::cin >> input;
+    Point target = Point::parse_point(input);
+
+    kruskal(n, kruskal_matrix);
+    traveling_salesman(n, kruskal_matrix);
+
+    int graph[100][100];
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            graph[i][j] = capacity_matrix[i][j];
+        }
+    }
+
+    int max_flow = fordFulkerson(graph, 0, n - 1, n);
+    std::cout << "3.\n" << max_flow << std::endl;
+
+    Point closest = target.closest_point(points, target);
+    std::cout << "4.\n(" << closest.x << "," << closest.y << ")\n";
 
     return 0;
 }

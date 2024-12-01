@@ -1,0 +1,5 @@
+TestKruskal 1 0.0332111
+TestTravelingSalesman 1 0.0098864
+TestFordFulkerson 1 0.0109233
+TestClosestPoint 1 0.0105804
+---

@@ -1,4 +1,6 @@
-add_executable(main_app main.cc)
+# app/CMakeLists.txt
 
-# Enlazar el ejecutable con la biblioteca del proyecto
-target_link_libraries(main_app PRIVATE my_project_lib)
+add_executable(main main.cc)
+
+# Vincular bibliotecas necesarias
+target_link_libraries(main PRIVATE algorithms graph utils tsp)

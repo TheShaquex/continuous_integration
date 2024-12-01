@@ -1,17 +1,28 @@
-# Descargar GoogleTest
-include(FetchContent)
-FetchContent_Declare(
-    googletest
-    URL https://github.com/google/googletest/archive/release-1.12.1.tar.gz
+# Incluir CTest
+include(CTest)
+
+# Especificar los archivos fuente para las pruebas
+set(TEST_SOURCES
+    test.cc
 )
-FetchContent_MakeAvailable(googletest)
 
-# Crear ejecutable para pruebas
-add_executable(tests test_main.cc)
+# Crear el ejecutable para las pruebas
+add_executable(test_runner ${TEST_SOURCES})
 
-# Enlazar con GoogleTest y la biblioteca del proyecto
-target_link_libraries(tests PRIVATE gtest gtest_main my_project_lib)
+# Asegúrate de que los encabezados del proyecto sean encontrados
+include_directories(${CMAKE_SOURCE_DIR}/src)
 
-# Registrar las pruebas
-include(GoogleTest)
-gtest_discover_tests(tests)
+# Enlazar las bibliotecas necesarias
+target_link_libraries(test_runner PRIVATE algorithms graph utils)
+
+# Agregar pruebas con CTest
+add_test(NAME TestKruskal COMMAND test_runner)
+add_test(NAME TestTravelingSalesman COMMAND test_runner)
+add_test(NAME TestFordFulkerson COMMAND test_runner)
+add_test(NAME TestClosestPoint COMMAND test_runner)
+
+# Si estás usando cobertura
+if(CODE_COVERAGE)
+    target_compile_options(test_runner PRIVATE --coverage)
+    target_link_options(test_runner PRIVATE --coverage)
+endif()

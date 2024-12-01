@@ -1,24 +1,29 @@
-cmake_minimum_required(VERSION 3.16)
-project(MyProject LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.10)
+project(continuous_integration)
 
-# Configurar el estándar de C++
+# Configuraciones estándar
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Configurar directorios de salida
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+# Opciones de compilación
+option(BUILD_TESTS "Build tests" ON)
+option(CODE_COVERAGE "Enable code coverage" OFF)
 
-# Subdirectorios
-add_subdirectory(app)
-add_subdirectory(src)
-add_subdirectory(tests)
-
-# Opcional: incluye dependencias externas
-if(EXISTS ${CMAKE_SOURCE_DIR}/external/CMakeLists.txt)
-    add_subdirectory(external)
+# Configuraciones de compilación
+if(CODE_COVERAGE)
+    add_compile_options(--coverage)
+    link_libraries(--coverage)
 endif()
+
+# Configurar directorios de salida
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 # Habilitar pruebas
 enable_testing()
+
+# Agregar subdirectorios
+add_subdirectory(src)
+add_subdirectory(app)
+if(BUILD_TESTS)
+    add_subdirectory(tests)
+endif()
