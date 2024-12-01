@@ -1,0 +1,68 @@
+[
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/algorithms -g -std=gnu++17 --coverage -o src\\algorithms\\CMakeFiles\\algorithms.dir\\ford_fulkerson.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\algorithms\\ford_fulkerson.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\algorithms\\ford_fulkerson.cc",
+  "output": "src\\algorithms\\CMakeFiles\\algorithms.dir\\ford_fulkerson.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/algorithms -g -std=gnu++17 --coverage -o src\\algorithms\\CMakeFiles\\algorithms.dir\\kruskal.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\algorithms\\kruskal.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\algorithms\\kruskal.cc",
+  "output": "src\\algorithms\\CMakeFiles\\algorithms.dir\\kruskal.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/algorithms -g -std=gnu++17 --coverage -o src\\algorithms\\CMakeFiles\\algorithms.dir\\traveling_salesman.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\algorithms\\traveling_salesman.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\algorithms\\traveling_salesman.cc",
+  "output": "src\\algorithms\\CMakeFiles\\algorithms.dir\\traveling_salesman.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/graph -g -std=gnu++17 --coverage -o src\\graph\\CMakeFiles\\graph.dir\\kruskal.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\graph\\kruskal.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\graph\\kruskal.cc",
+  "output": "src\\graph\\CMakeFiles\\graph.dir\\kruskal.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/graph -g -std=gnu++17 --coverage -o src\\graph\\CMakeFiles\\graph.dir\\union_find.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\graph\\union_find.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\graph\\union_find.cc",
+  "output": "src\\graph\\CMakeFiles\\graph.dir\\union_find.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/tsp -g -std=gnu++17 --coverage -o src\\tsp\\CMakeFiles\\tsp.dir\\traveling_salesman.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\tsp\\traveling_salesman.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\tsp\\traveling_salesman.cc",
+  "output": "src\\tsp\\CMakeFiles\\tsp.dir\\traveling_salesman.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/utils -g -std=gnu++17 --coverage -o src\\utils\\CMakeFiles\\utils.dir\\point_utils.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\utils\\point_utils.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\utils\\point_utils.cc",
+  "output": "src\\utils\\CMakeFiles\\utils.dir\\point_utils.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/utils -g -std=gnu++17 --coverage -o src\\utils\\CMakeFiles\\utils.dir\\point.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\utils\\point.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\utils\\point.cc",
+  "output": "src\\utils\\CMakeFiles\\utils.dir\\point.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/utils -g -std=gnu++17 --coverage -o src\\utils\\CMakeFiles\\utils.dir\\union_find.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\utils\\union_find.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\src\\utils\\union_find.cc",
+  "output": "src\\utils\\CMakeFiles\\utils.dir\\union_find.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/algorithms -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/graph -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/utils -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/tsp -g -std=gnu++17 --coverage -o app\\CMakeFiles\\main.dir\\main.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\app\\main.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\app\\main.cc",
+  "output": "app\\CMakeFiles\\main.dir\\main.cc.obj"
+},
+{
+  "directory": "C:/Users/Shaque/Documents/GitHub/continuous_integration/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/algorithms -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/graph -IC:/Users/Shaque/Documents/GitHub/continuous_integration/src/utils -g -std=gnu++17 --coverage -o tests\\CMakeFiles\\test_runner.dir\\test.cc.obj -c C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\tests\\test.cc",
+  "file": "C:\\Users\\Shaque\\Documents\\GitHub\\continuous_integration\\tests\\test.cc",
+  "output": "tests\\CMakeFiles\\test_runner.dir\\test.cc.obj"
+}
+]

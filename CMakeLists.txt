@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Opciones de compilación
 option(BUILD_TESTS "Build tests" ON)
 option(CODE_COVERAGE "Enable code coverage" OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 
 # Configuraciones de compilación
 if(CODE_COVERAGE)
