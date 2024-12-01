@@ -1,10 +1,10 @@
-Start testing: Dec 01 04:17 Hora estándar central (México)
+Start testing: Dec 01 04:32 Hora estándar central (México)
 ----------------------------------------------------------
-1/4 Testing: TestKruskal
-1/4 Test: TestKruskal
+1/5 Testing: TestKruskal
+1/5 Test: TestKruskal
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestKruskal" start time: Dec 01 04:17 Hora estándar central (México)
+"TestKruskal" start time: Dec 01 04:32 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -18,20 +18,21 @@ A B C D A
 Traveling Salesman test passed.
 Ford Fulkerson test passed.
 Closest Point test passed.
+Edge test passed.
 All tests passed successfully!
 <end of output>
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TestKruskal" end time: Dec 01 04:17 Hora estándar central (México)
+"TestKruskal" end time: Dec 01 04:32 Hora estándar central (México)
 "TestKruskal" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/4 Testing: TestTravelingSalesman
-2/4 Test: TestTravelingSalesman
+2/5 Testing: TestTravelingSalesman
+2/5 Test: TestTravelingSalesman
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestTravelingSalesman" start time: Dec 01 04:17 Hora estándar central (México)
+"TestTravelingSalesman" start time: Dec 01 04:32 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -45,20 +46,21 @@ A B C D A
 Traveling Salesman test passed.
 Ford Fulkerson test passed.
 Closest Point test passed.
+Edge test passed.
 All tests passed successfully!
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TestTravelingSalesman" end time: Dec 01 04:17 Hora estándar central (México)
+"TestTravelingSalesman" end time: Dec 01 04:32 Hora estándar central (México)
 "TestTravelingSalesman" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/4 Testing: TestFordFulkerson
-3/4 Test: TestFordFulkerson
+3/5 Testing: TestFordFulkerson
+3/5 Test: TestFordFulkerson
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestFordFulkerson" start time: Dec 01 04:17 Hora estándar central (México)
+"TestFordFulkerson" start time: Dec 01 04:32 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -72,20 +74,21 @@ A B C D A
 Traveling Salesman test passed.
 Ford Fulkerson test passed.
 Closest Point test passed.
+Edge test passed.
 All tests passed successfully!
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TestFordFulkerson" end time: Dec 01 04:17 Hora estándar central (México)
+"TestFordFulkerson" end time: Dec 01 04:32 Hora estándar central (México)
 "TestFordFulkerson" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/4 Testing: TestClosestPoint
-4/4 Test: TestClosestPoint
+4/5 Testing: TestClosestPoint
+4/5 Test: TestClosestPoint
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestClosestPoint" start time: Dec 01 04:17 Hora estándar central (México)
+"TestClosestPoint" start time: Dec 01 04:32 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -99,13 +102,42 @@ A B C D A
 Traveling Salesman test passed.
 Ford Fulkerson test passed.
 Closest Point test passed.
+Edge test passed.
 All tests passed successfully!
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TestClosestPoint" end time: Dec 01 04:17 Hora estándar central (México)
+"TestClosestPoint" end time: Dec 01 04:32 Hora estándar central (México)
 "TestClosestPoint" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 01 04:17 Hora estándar central (México)
+5/5 Testing: TestEdge
+5/5 Test: TestEdge
+Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
+Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
+"TestEdge" start time: Dec 01 04:32 Hora estándar central (México)
+Output:
+----------------------------------------------------------
+
+1.
+(C, D)
+(A, B)
+(B, C)
+Kruskal test passed.
+2.
+A B C D A 
+Traveling Salesman test passed.
+Ford Fulkerson test passed.
+Closest Point test passed.
+Edge test passed.
+All tests passed successfully!
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"TestEdge" end time: Dec 01 04:32 Hora estándar central (México)
+"TestEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 01 04:32 Hora estándar central (México)

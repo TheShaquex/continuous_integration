@@ -2,6 +2,7 @@
 #include <cassert>
 #include "../src/include/algorithms.h"
 #include "../src/utils/point.h"
+#include "../src/graph/edge.h"
 
 void test_kruskal() {
     int n = 4;
@@ -59,11 +60,19 @@ void test_closest_point() {
     std::cout << "Closest Point test passed." << std::endl;
 }
 
+void test_edge() {
+    edge e1(1, 2, 10);
+    assert(e1.u == 1 && e1.v == 2 && e1.weight == 10);
+    std::cout << "Edge test passed." << std::endl;
+}
+
+
 int main() {
     test_kruskal();
     test_traveling_salesman();
     test_ford_fulkerson();
     test_closest_point();
+    test_edge();
     std::cout << "All tests passed successfully!" << std::endl;
     return 0;
 }

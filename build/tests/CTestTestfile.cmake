@@ -12,3 +12,5 @@ add_test(TestFordFulkerson "C:/Users/Shaque/Documents/GitHub/continuous_integrat
 set_tests_properties(TestFordFulkerson PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/Shaque/Documents/GitHub/continuous_integration/tests/CMakeLists.txt;21;add_test;C:/Users/Shaque/Documents/GitHub/continuous_integration/tests/CMakeLists.txt;0;")
 add_test(TestClosestPoint "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe")
 set_tests_properties(TestClosestPoint PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/Shaque/Documents/GitHub/continuous_integration/tests/CMakeLists.txt;22;add_test;C:/Users/Shaque/Documents/GitHub/continuous_integration/tests/CMakeLists.txt;0;")
+add_test(TestEdge "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe")
+set_tests_properties(TestEdge PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/Shaque/Documents/GitHub/continuous_integration/tests/CMakeLists.txt;23;add_test;C:/Users/Shaque/Documents/GitHub/continuous_integration/tests/CMakeLists.txt;0;")

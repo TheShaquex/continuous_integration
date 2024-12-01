@@ -20,6 +20,7 @@ add_test(NAME TestKruskal COMMAND test_runner)
 add_test(NAME TestTravelingSalesman COMMAND test_runner)
 add_test(NAME TestFordFulkerson COMMAND test_runner)
 add_test(NAME TestClosestPoint COMMAND test_runner)
+add_test(NAME TestEdge COMMAND test_runner)
 
 # Si estás usando cobertura
 if(CODE_COVERAGE)
