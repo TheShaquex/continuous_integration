@@ -35,7 +35,8 @@ Point Point::closest_point(const std::vector<Point>& points, const Point& target
 
 // Función para parsear un punto del formato "(x,y)" a la estructura Point
 Point Point::parse_point(const std::string& input) {
-    int x, y;
+    int x;
+    int y;
     char ignore;
     std::stringstream ss(input);
     ss >> ignore >> x >> ignore >> y >> ignore; // Leer formato (x,y)

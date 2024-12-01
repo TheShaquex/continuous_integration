@@ -1,6 +1,6 @@
-TestKruskal 1 0.0294227
-TestTravelingSalesman 1 0.009835
-TestFordFulkerson 1 0.0098267
-TestClosestPoint 1 0.0099966
-TestEdge 1 0.0109723
+TestKruskal 1 0.0305935
+TestTravelingSalesman 1 0.0098965
+TestFordFulkerson 1 0.0099352
+TestClosestPoint 1 0.0104831
+TestEdge 1 0.0113575
 ---

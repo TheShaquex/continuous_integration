@@ -2,10 +2,11 @@
 #include <vector>
 
 class UnionFind {
-    std::vector<int> parent, rank;
+    std::vector<int> parent;
+    std::vector<int> rank;
 
 public:
-    UnionFind(int n);                 
+    explicit UnionFind(int n);                 
     int find(int x);                  
     bool unionSets(int x, int y);     
 };

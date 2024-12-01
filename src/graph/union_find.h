@@ -3,10 +3,11 @@
 
 #include <vector>
 class union_find {
-    std::vector<int> parent, rank;
+    std::vector<int> parent;
+    std::vector<int> rank;
 
 public:
-    union_find(int n);
+    explicit union_find(int n);
     int find(int x);
     bool union_sets(int x, int y);
 };

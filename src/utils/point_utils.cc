@@ -4,7 +4,8 @@
 #include <sstream>
 
 Point parse_point(const std::string& input) {
-    int x, y;
+    int x;
+    int y;
     char ignore;
     std::stringstream ss(input);
     ss >> ignore >> x >> ignore >> y >> ignore; // Leer formato (x,y)

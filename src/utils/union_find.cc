@@ -17,9 +17,8 @@ int UnionFind::find(int x) {
 
 bool UnionFind::unionSets(int x, int y) { 
     int rootX = find(x);
-    int rootY = find(y);
 
-    if (rootX != rootY) {
+    if (int rootY = find(y); rootX != rootY) {
         if (rank[rootX] < rank[rootY]) {
             parent[rootX] = rootY;
         } else if (rank[rootX] > rank[rootY]) {

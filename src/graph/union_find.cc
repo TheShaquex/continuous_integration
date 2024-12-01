@@ -13,9 +13,8 @@ int union_find::find(int x) {
 
 bool union_find::union_sets(int x, int y) {
     int root_x = find(x);
-    int root_y = find(y);
 
-    if (root_x != root_y) {
+    if (int root_y = find(y); root_x != root_y) {
         if (rank[root_x] < rank[root_y]) {
             parent[root_x] = root_y;
         } else if (rank[root_x] > rank[root_y]) {

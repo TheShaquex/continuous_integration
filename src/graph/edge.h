@@ -2,7 +2,9 @@
 #define EDGE_H
 
 struct edge {
-    int u, v, weight;
+    int u;
+    int v;
+    int weight;
     edge(int u, int v, int weight) : u(u), v(v), weight(weight) {}
 };
 

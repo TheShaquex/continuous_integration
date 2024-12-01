@@ -3,7 +3,9 @@
 #include "../utils/union_find.h"
 
 struct Edge {
-    int u, v, weight;
+    int u;
+    int v;
+    int weight;
     Edge(int u, int v, int weight);
 };
 

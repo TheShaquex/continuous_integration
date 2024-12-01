@@ -1,10 +1,10 @@
-Start testing: Dec 01 04:37 Hora estándar central (México)
+Start testing: Dec 01 04:47 Hora estándar central (México)
 ----------------------------------------------------------
 1/5 Testing: TestKruskal
 1/5 Test: TestKruskal
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestKruskal" start time: Dec 01 04:37 Hora estándar central (México)
+"TestKruskal" start time: Dec 01 04:47 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -24,7 +24,7 @@ All tests passed successfully!
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TestKruskal" end time: Dec 01 04:37 Hora estándar central (México)
+"TestKruskal" end time: Dec 01 04:47 Hora estándar central (México)
 "TestKruskal" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -32,7 +32,7 @@ Test Passed.
 2/5 Test: TestTravelingSalesman
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestTravelingSalesman" start time: Dec 01 04:37 Hora estándar central (México)
+"TestTravelingSalesman" start time: Dec 01 04:47 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -52,7 +52,7 @@ All tests passed successfully!
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TestTravelingSalesman" end time: Dec 01 04:37 Hora estándar central (México)
+"TestTravelingSalesman" end time: Dec 01 04:47 Hora estándar central (México)
 "TestTravelingSalesman" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -60,7 +60,7 @@ Test Passed.
 3/5 Test: TestFordFulkerson
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestFordFulkerson" start time: Dec 01 04:37 Hora estándar central (México)
+"TestFordFulkerson" start time: Dec 01 04:47 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -80,7 +80,7 @@ All tests passed successfully!
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TestFordFulkerson" end time: Dec 01 04:37 Hora estándar central (México)
+"TestFordFulkerson" end time: Dec 01 04:47 Hora estándar central (México)
 "TestFordFulkerson" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -88,7 +88,7 @@ Test Passed.
 4/5 Test: TestClosestPoint
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestClosestPoint" start time: Dec 01 04:37 Hora estándar central (México)
+"TestClosestPoint" start time: Dec 01 04:47 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -108,7 +108,7 @@ All tests passed successfully!
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TestClosestPoint" end time: Dec 01 04:37 Hora estándar central (México)
+"TestClosestPoint" end time: Dec 01 04:47 Hora estándar central (México)
 "TestClosestPoint" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -116,7 +116,7 @@ Test Passed.
 5/5 Test: TestEdge
 Command: "C:/Users/Shaque/Documents/GitHub/continuous_integration/build/test_runner.exe"
 Directory: C:/Users/Shaque/Documents/GitHub/continuous_integration/build/tests
-"TestEdge" start time: Dec 01 04:37 Hora estándar central (México)
+"TestEdge" start time: Dec 01 04:47 Hora estándar central (México)
 Output:
 ----------------------------------------------------------
 
@@ -136,8 +136,8 @@ All tests passed successfully!
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TestEdge" end time: Dec 01 04:37 Hora estándar central (México)
+"TestEdge" end time: Dec 01 04:47 Hora estándar central (México)
 "TestEdge" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 01 04:37 Hora estándar central (México)
+End testing: Dec 01 04:47 Hora estándar central (México)
