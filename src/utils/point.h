@@ -23,15 +23,49 @@
  */
 
 #pragma once
+
 #include <string>
 #include <vector>
 
+/**
+ * @brief Represents a 2D point in Cartesian coordinates.
+ */
 class Point {
 public:
-    int x;
-    int y;
+    int x; ///< The x-coordinate of the point.
+    int y; ///< The y-coordinate of the point.
+
+    /**
+     * @brief Constructs a Point object with given x and y coordinates.
+     * 
+     * @param x The x-coordinate.
+     * @param y The y-coordinate.
+     */
     Point(int x, int y) : x(x), y(y) {}
-    static double distance(const Point& p1, const Point& p2); // Ahora es estático
+
+    /**
+     * @brief Calculates the Euclidean distance between two points.
+     * 
+     * @param p1 The first point.
+     * @param p2 The second point.
+     * @return The Euclidean distance between p1 and p2.
+     */
+    static double distance(const Point& p1, const Point& p2);
+
+    /**
+     * @brief Parses a point from a string in the format "(x, y)".
+     * 
+     * @param input A string representing the point.
+     * @return A Point object parsed from the input string.
+     */
     static Point parse_point(const std::string& input);
+
+    /**
+     * @brief Finds the closest point to a target from a list of points.
+     * 
+     * @param points A vector of points to search.
+     * @param target The target point.
+     * @return The closest point to the target.
+     */
     Point closest_point(const std::vector<Point>& points, const Point& target);
 };
