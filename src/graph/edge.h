@@ -25,11 +25,21 @@
 #ifndef EDGE_H
 #define EDGE_H
 
-struct edge {
-    int u;
-    int v;
-    int weight;
-    edge(int u, int v, int weight) : u(u), v(v), weight(weight) {}
+/**
+ * @brief Represents an edge in a graph with a source, destination, and weight.
+ */
+struct Edge {
+    int u;       ///< The source node of the edge.
+    int v;       ///< The destination node of the edge.
+    int weight;  ///< The weight or cost associated with the edge.
+
+    /**
+     * @brief Constructs an Edge with given source, destination, and weight.
+     * @param u The source node of the edge.
+     * @param v The destination node of the edge.
+     * @param weight The weight or cost associated with the edge.
+     */
+    Edge(int u, int v, int weight) : u(u), v(v), weight(weight) {}
 };
 
 #endif // EDGE_H

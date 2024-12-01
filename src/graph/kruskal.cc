@@ -27,13 +27,13 @@
 #include <algorithm>
 #include <iostream>
 
-bool compare_edges(const edge& a, const edge& b) {
+bool compare_edges(const Edge& a, const Edge& b) {
     return a.weight < b.weight;
 }
 
 void kruskal(int n, const std::vector<std::vector<int>>& graph) {
     union_find uf(n);
-    std::vector<edge> edges;
+    std::vector<Edge> edges;
 
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
@@ -45,7 +45,7 @@ void kruskal(int n, const std::vector<std::vector<int>>& graph) {
 
     std::sort(edges.begin(), edges.end(), compare_edges);
 
-    std::vector<edge> mst;
+    std::vector<Edge> mst;
     int total_weight = 0;
 
     for (const auto& e : edges) {
